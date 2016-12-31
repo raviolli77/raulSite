@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--head.META-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <meta name="description" content="Hi. I'm Raul, yeah">
+    <meta name="keywords" content="Raul Eulogio, R, SQL, HTML, CSS, JavaScript, Web Design, Web Development, Data Science, Analysis, Statistical Learning">
+    <meta name="author" content="Raul Eulogio">
+    <meta property="og:title" content="Raul Eulogio"/>
+    <meta property="og:image" content="http://i.imgur.com/xouUl6H.png"/>
+    <meta property="og:url" content="http://www.rauleulogio.com"/>
+    <meta property="og:description" content="Hi. I'm Raul, yeah."/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://www.rauleulogio.com">
+    <meta name="twitter:title" content="Raul Eulogio">
+    <meta name="twitter:description" content="Hi. I'm Raul, yeah.">
+    <meta name="twitter:image" content="http://i.imgur.com/xouUl6H.png">
+    <link rel="publisher" href="https://www.rauleulogio.com"/>
+    
+<!--head.CSS-->
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/grayscale.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+<!-- Custom Fonts for GRAYSCALE themex -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">    
+<!-- TITLE -->
+    <title>Raul Eulogio</title>
+<!-- Loading jQuery.JS -->
+    <script src="js/jquery.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+ <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span class="light">
+                        Raul
+                    </span> Eulogio
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="projects.html">Projects</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="cv.html">Curriculum Vitae</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+       
+<!-- Intro HEADER -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row" style="margin-top:5%;">
+                    <div class="col-lg-6 col-sm-5">
+                        <img src="favicon.png" style="height:70%; padding-left:30px;">
+                    </div>
+                    <div class="col-lg-6 col-sm-7">
+                        <div class="introBox">
+                            <p class="introDets">
+                                <span style="font-size:1.5em;color:gray"> <strong>Hi!</strong></span> I'm Raul, yeah.
+                            </p>
+                            <br/>
+                            <p class="introDets">
+                                Co-founded <a href="http://www.inertia7.com/"><strong>Inertia7</strong></a>, a platform for sharing data science projects. I like <strong>dank memes</strong>.
+                            </p>
+                            <br/>
+                            <p class="introDets">
+                                Central Coast Born and Raised.
+                            <br/>
+                                <strong>Santa Maria</strong> stand up.
+                            </p>
+                            <br/>
+                            <p class="introDets">
+                                <strong>Technologies:</strong> R, SQL, Python
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Say Hi Section -->
+    <section class="center">
+    <hr/>
+        <h6>
+            Say hi
+        </h6>
+         <a href="https://www.github.com/raviolli77" target="_blank">
+         <img src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-256.png" height="35" width="35">
+         </a> 
+         <a href="https://www.linkedin.com/in/raul-eulogio-217069123" target="_blank">
+         <img src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/linkedin-4096-black.png" alt="Facebook" height="45" width="45">
+         </a>
+    </section>
+<!-- Footer Section -->
+    <footer id="footer">
+        <div class="intro-body center">
+            <h6><a href="projects.html">Projects</a> | <a href="cv.html">Curriculum Vitae</a></h6>
+            <br/>
+            <h6>
+                &copy; 2016 <a href="index.html">Raul Eulogio</a>. All Rights Reserved.
+            </h6>
+        </div>
+      </footer>
+<!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+<!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+<!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            
+            $('.main-nav li a').bind('click',function(event){
+                var $anchor = $(this);
+                
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top - 102
+                }, 1500,'easeInOutExpo');
+                /*
+                if you don't want to use the easing effects:
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1000);
+                */
+                event.preventDefault();
+            });
+        })
+    </script>
+<!-- HEY -->
+    <script type="text/javascript">
+        console.log("Hello!")
+    </script>
+</body>
+</html>
