@@ -1,0 +1,20 @@
+/*
+header {
+	background:
+	linear-gradient(
+		#FF3996,
+		transparent
+	),
+	linear-gradient(
+		-45deg,
+		#5B46FF,
+		transparent
+	),
+	linear-gradient(
+		45deg,
+		#39FFF9,
+		transparent
+	);
+background-blend-mode: multiply;
+}        
+*/
