@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    #'django_markdown2',
+    #'markdown_deux',
 ]
 
 MIDDLEWARE = [

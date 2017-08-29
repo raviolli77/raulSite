@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 #from markdown_deux import markdown 
 #from django.utils.text import mark_safe
+#from django.utils.safestring import mark_safe
 # Create your models here.
 
 class Post(models.Model):
@@ -40,7 +41,8 @@ class Post(models.Model):
 
 	#def get_markdown():
 		#text = self.content
-		#return markdown(text)
+		#markdown_text = markdown(text)
+		#return markdown(markdown_text)
 
 	def __str__(self):
 		return self.title
