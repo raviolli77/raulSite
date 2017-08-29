@@ -1,5 +1,7 @@
 from django.db import models
 from django.utils import timezone
+#from markdown_deux import markdown 
+#from django.utils.text import mark_safe
 # Create your models here.
 
 class Post(models.Model):
@@ -36,6 +38,9 @@ class Post(models.Model):
 		self.published_date = timezone.now()
 		self.save()
 
-	def __str__(self):
-		return self.title		
+	#def get_markdown():
+		#text = self.content
+		#return markdown(text)
 
+	def __str__(self):
+		return self.title
